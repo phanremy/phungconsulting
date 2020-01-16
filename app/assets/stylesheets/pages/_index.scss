@@ -63,12 +63,45 @@ a:hover {
   width: 500px;
 }
 
+.reference-picture {
+  width:50%
+}
+
+.reference-categories {
+  display:flex;
+  text-align:center;
+}
+
+.reference-categories p {
+  font-family: Verdana;
+  font-size: 12px;
+  font-weight: bold;
+  color: #CC0000;
+  margin-bottom: 0px;
+  margin-top: 10px;
+
+}
+
+.reference-carousel {
+  width: 50%; // ca saccade sinon
+  text-align: center;
+}
+
 @media(max-width: 767.98px) {
     // Test navbar-top, clash with other parameters
   // .main-page {
     // width: 100vh;
     // display: block;
   // }
+
+  .reference-categories {
+    display:block;
+    text-align:left;
+  }
+
+  .reference-carousel{
+    width: 100%;
+  }
 
   .office-picture {
     width: 200px;

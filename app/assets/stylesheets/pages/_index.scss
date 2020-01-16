@@ -59,6 +59,10 @@ a:hover {
   width: 350px;
 }
 
+.event-picture {
+  width: 500px;
+}
+
 @media(max-width: 767.98px) {
     // Test navbar-top, clash with other parameters
   // .main-page {
@@ -74,5 +78,9 @@ a:hover {
     margin-left: 10px;
     margin-top: 130px;
     max-width: 300px;
+  }
+
+  .event-picture {
+    width: 300px;
   }
 }

@@ -57,7 +57,7 @@ const selectorMenu = () => {
     references.addEventListener('click', (event) => {
       societe.classList.remove('active');
       activites.classList.remove('active');
-      references.classList.remove('active');
+      references.classList.add('active');
       evenements.classList.remove('active');
       documents.classList.remove('active');
       aboutus.classList.remove('active');

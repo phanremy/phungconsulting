@@ -18,6 +18,10 @@
 }
 
 
+.selector.active p:hover {
+  color: black !important;
+}
+
 .selector :hover {
   background-color: white;
 }

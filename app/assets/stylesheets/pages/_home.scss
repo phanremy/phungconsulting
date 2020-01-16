@@ -1,1 +1,28 @@
 // Specific CSS for your home-page
+
+.home {
+  height: 100vh;
+}
+
+.home-banner {
+  width: 100%; // ca saccade sinon
+  height: 246px;
+}
+
+@media(max-width: 800px) {
+  .home-banner{
+    height: 100%;
+  }
+}
+
+
+@media(max-width: 425px) {
+  // .container{
+  //   margin:0;
+  //   padding:0;
+  // }
+
+  #home-carousel{
+    display:none;
+  }
+}

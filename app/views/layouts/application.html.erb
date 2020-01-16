@@ -11,10 +11,17 @@
   </head>
   <body>
     <% unless current_page?(root_path) %>
-      <%= render 'shared/navbar' %>
+      <div class="main-page">
+        <%= render 'shared/navbar' %>
     <% end %>
-    <%= render 'shared/flashes' %>
-    <%= yield %>
+
+      <%= render 'shared/flashes' %>
+      <%= yield %>
+
+    <% unless current_page?(root_path) %>
+      </div>
+    <% end %>
+
     <%= javascript_include_tag 'application' %>
     <%= javascript_pack_tag 'application' %>
   </body>

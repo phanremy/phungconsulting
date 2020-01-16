@@ -1,2 +1,50 @@
 // Import page-specific CSS files here.
 @import "home";
+
+a:hover {
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+
+.section-container {
+  // width: 0 auto;
+  margin-left: 200px;
+  margin-top: 60px;
+}
+
+.main-page {
+  // width: 100vh;
+  display: flex;
+}
+
+
+.section-container h1{
+  font-family: Verdana;
+  font-size: 16px;
+  color: #339999
+}
+
+.section-container p{
+  font-family: Verdana;
+  font-size: 11px;
+  color: #505050;
+  padding:0px;
+  margin:0px;
+}
+
+.office-picture {
+  width: 350px;
+}
+
+@media(max-width: 800px) {
+    // Test navbar-top, clash with other parameters
+  // .main-page {
+    // width: 100vh;
+    // display: block;
+  // }
+  .section-container {
+    margin-left: 10px;
+    margin-top: 130px;
+  }
+}

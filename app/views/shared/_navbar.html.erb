@@ -1,35 +1,15 @@
-<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
-  <%= link_to "#", class: "navbar-brand" do %>
-    <%= image_tag "https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/logo.png" %>
-    <% end %>
-
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <% if user_signed_in? %>
-        <li class="nav-item active">
-          <%= link_to "Home", "#", class: "nav-link" %>
-        </li>
-        <li class="nav-item">
-          <%= link_to "Messages", "#", class: "nav-link" %>
-        </li>
-        <li class="nav-item dropdown">
-          <%= image_tag "https://kitt.lewagon.com/placeholder/users/ssaunier", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
-          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-            <%= link_to "Action", "#", class: "dropdown-item" %>
-            <%= link_to "Another action", "#", class: "dropdown-item" %>
-            <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
-          </div>
-        </li>
-      <% else %>
-        <li class="nav-item">
-          <%= link_to "Login", new_user_session_path, class: "nav-link" %>
-        </li>
-      <% end %>
-    </ul>
+<div class="sidebar" style="background-image: url(<%= image_path "flower_vertical.jpg"%>)">
+  <div class="pl-3">
+    <%= image_tag "logo.png", alt: "Phung Consulting Logo", class:"pl-xl-5 ml-xl-4 pl-lg-4 ml-lg-4 pl-md-3 ml-md-3 pl-sm-2 ml-sm-2" %>
+    <div class="sidebar-links py-4 pl-xl-5 ml-xl-4 pl-lg-4 ml-lg-4 pl-md-3 ml-md-3 pl-sm-2 ml-sm-2">
+      <p><%= link_to "accueil", "#", class:"sidebar-link" %></p>
+      <p><%= link_to "societe", "#", class:"sidebar-link" %></p>
+      <p><%= link_to "activites", "#", class:"sidebar-link" %></p>
+      <p><%= link_to "references", "#", class:"sidebar-link" %></p>
+      <p><%= link_to "evenements", "#", class:"sidebar-link" %></p>
+      <p><%= link_to "documents", "#", class:"sidebar-link" %></p>
+      <p><%= link_to "about us", "#", class:"sidebar-link" %></p>
+      <p><%= link_to "contact", "#", class:"sidebar-link" %></p>
+    </div>
   </div>
 </div>

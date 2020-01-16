@@ -1,17 +1,29 @@
 <div class="sidebar" style="background-image: url(<%= image_path "flower_vertical.jpg"%>)">
-  <div class="pl-3">
+  <div class="pl-2">
     <%= link_to index_path do %>
       <%= image_tag "logo.png", alt: "Phung Consulting Logo", class:"pt-3 pl-xl-5 ml-xl-4 pl-lg-5 ml-lg-4 pl-md-2 ml-md-2 pl-sm-2 ml-sm-2" %>
     <% end %>
-  <div class="sidebar-links pl-xl-5 ml-xl-4 pl-lg-5 ml-lg-4 pl-md-2 ml-md-2 pl-sm-2 ml-sm-2">
-      <p><%= link_to "accueil", root_path, class:"sidebar-link" %></p>
-      <p><%= link_to "la société", index_path, class:"sidebar-link" %></p>
-      <p><%= link_to "activités", activites_path, class:"sidebar-link" %></p>
-      <p><%= link_to "références", references_path, class:"sidebar-link" %></p>
-      <p><%= link_to "événements", evenements_path, class:"sidebar-link" %></p>
-      <p><%= link_to "documents", documents_path, class:"sidebar-link" %></p>
-      <p><%= link_to "about us", about_us_path, class:"sidebar-link" %></p>
-      <p><%= link_to "contact", contact_path, class:"sidebar-link" %></p>
+    <div class="sidebar-links pl-xl-5 ml-xl-4 pl-lg-5 ml-lg-4 pl-md-2 ml-md-2 pl-sm-2 ml-sm-2">
+      <div class="selectors">
+        <div id="root-selector" class="selector"> <p class="sidebar-link" ><%= link_to "accueil", root_path, class:"sidebar-link" %></p> </div>
+        <div id="societe-selector" class="selector active"> <p class="sidebar-link" >la société</p> </div>
+        <div id="activites-selector" class="selector"> <p class="sidebar-link" >activités</p> </div>
+        <div id="references-selector" class="selector"> <p class="sidebar-link" >références</p> </div>
+        <div id="evenements-selector" class="selector"> <p class="sidebar-link" >événements</p> </div>
+        <div id="documents-selector" class="selector"> <p class="sidebar-link" >documents</p> </div>
+        <div id="about-us-selector" class="selector"> <p class="sidebar-link" >🇬🇧 about us</p> </div>
+        <div id="contact-selector" class="selector"> <p class="sidebar-link" >contact</p> </div>
+      </div>
     </div>
   </div>
 </div>
+
+<!--
+      <div id="root-selector" class="selector"> <p><#%= link_to "accueil", root_path, class:"sidebar-link" %></p> </div>
+      <div id="societe-selector" class="selector active"> <p><#%= link_to "la société", index_path, class:"sidebar-link" %></p> </div>
+      <div id="activites-selector" class="selector"> <p><#%= link_to "activités", activites_path, class:"sidebar-link" %></p> </div>
+      <div id="references-selector" class="selector"> <p><#%= link_to "références", references_path, class:"sidebar-link" %></p> </div>
+      <div id="evenements-selector" class="selector"> <p><#%= link_to "événements", evenements_path, class:"sidebar-link" %></p> </div>
+      <div id="documents-selector" class="selector"> <p><#%= link_to "documents", documents_path, class:"sidebar-link" %></p> </div>
+      <div id="about-us-selector" class="selector"> <p><#%= link_to "🇬🇧 about us", about_us_path, class:"sidebar-link" %></p> </div>
+      <div id="contact-selector" class="selector"> <p><#%= link_to "contact", contact_path, class:"sidebar-link" %></p> </div> -->

@@ -87,6 +87,10 @@ a:hover {
   text-align: center;
 }
 
+.hidden {
+  display: none;
+}
+
 @media(max-width: 767.98px) {
     // Test navbar-top, clash with other parameters
   // .main-page {

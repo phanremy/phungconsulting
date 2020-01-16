@@ -12,6 +12,26 @@
   color:darkblue;
 }
 
+
+.selector.active p {
+  color: #FFFFFF !important;
+}
+
+
+.selector :hover {
+  background-color: white;
+}
+
+.selector p:hover {
+  opacity:0.7;
+  cursor: pointer;
+
+}
+
+.selector.active p:hover {
+  opacity:1 !important;
+}
+
 @media(max-width: 767.98px){
   // Test navbar-top, clash with other parameters
   // .sidebar{

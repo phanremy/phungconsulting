@@ -1,7 +1,5 @@
 import "bootstrap";
 
-console.log('coucou');
-
 const selectorMenu = () => {
   const societe = document.getElementById('societe-selector');
   const activites = document.getElementById('activites-selector');

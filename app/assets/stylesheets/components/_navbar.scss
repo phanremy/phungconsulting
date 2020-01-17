@@ -12,6 +12,9 @@
   color:darkblue;
 }
 
+.selector {
+  transition: all 0.7s ease;
+}
 
 .selector.active p {
   color: #FFFFFF !important;
@@ -24,6 +27,7 @@
 
 .selector :hover {
   background-color: white;
+  transition: all 0.3s ease;
 }
 
 .selector p:hover {

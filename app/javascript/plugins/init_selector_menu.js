@@ -49,7 +49,9 @@ const selectorMenu = () => {
       documentsContainer.classList.add('hidden');
       aboutusContainer.classList.add('hidden');
       contactContainer.classList.add('hidden');
-      // document.querySelector('.navbar-toggler').click();
+      if (window.screen.availWidth <= 768) {
+        document.querySelector('.navbar-toggler').click();
+      }
     });
 
     references.addEventListener('click', (event) => {
@@ -67,7 +69,9 @@ const selectorMenu = () => {
       documentsContainer.classList.add('hidden');
       aboutusContainer.classList.add('hidden');
       contactContainer.classList.add('hidden');
-      // document.querySelector('.navbar-toggler').click();
+      if (window.screen.availWidth <= 768) {
+        document.querySelector('.navbar-toggler').click();
+      }
     });
 
     evenements.addEventListener('click', (event) => {
@@ -85,7 +89,9 @@ const selectorMenu = () => {
       documentsContainer.classList.add('hidden');
       aboutusContainer.classList.add('hidden');
       contactContainer.classList.add('hidden');
-      // document.querySelector('.navbar-toggler').click();
+      if (window.screen.availWidth <= 768) {
+        document.querySelector('.navbar-toggler').click();
+      }
     });
 
     documents.addEventListener('click', (event) => {
@@ -103,7 +109,9 @@ const selectorMenu = () => {
       documentsContainer.classList.remove('hidden');
       aboutusContainer.classList.add('hidden');
       contactContainer.classList.add('hidden');
-      // document.querySelector('.navbar-toggler').click();
+      if (window.screen.availWidth <= 768) {
+        document.querySelector('.navbar-toggler').click();
+      }
     });
 
     aboutus.addEventListener('click', (event) => {
@@ -121,7 +129,9 @@ const selectorMenu = () => {
       documentsContainer.classList.add('hidden');
       aboutusContainer.classList.remove('hidden');
       contactContainer.classList.add('hidden');
-      // document.querySelector('.navbar-toggler').click();
+      if (window.screen.availWidth <= 768) {
+        document.querySelector('.navbar-toggler').click();
+      }
     });
 
     contact.addEventListener('click', (event) => {
@@ -139,7 +149,9 @@ const selectorMenu = () => {
       documentsContainer.classList.add('hidden');
       aboutusContainer.classList.add('hidden');
       contactContainer.classList.remove('hidden');
-      // document.querySelector('.navbar-toggler').click();
+      if (window.screen.availWidth <= 768) {
+        document.querySelector('.navbar-toggler').click();
+      }
     });
   }
 };

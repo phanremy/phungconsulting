@@ -1,5 +1,6 @@
 const selectorMenu = () => {
-  const societe = document.getElementById('societe-selector');
+  if (document.querySelector('.selector')) {
+  // const societe = document.getElementById('societe-selector');
   const activites = document.getElementById('activites-selector');
   const references = document.getElementById('references-selector');
   const evenements = document.getElementById('evenements-selector');
@@ -16,25 +17,25 @@ const selectorMenu = () => {
   const aboutusContainer = document.getElementById('about-us-container');
   const contactContainer = document.getElementById('contact-container');
 
-    societe.addEventListener('click', (event) => {
-      societe.classList.add('active');
-      activites.classList.remove('active');
-      references.classList.remove('active');
-      evenements.classList.remove('active');
-      documents.classList.remove('active');
-      aboutus.classList.remove('active');
-      contact.classList.remove('active');
-      societeContainer.classList.remove('hidden');
-      activitesContainer.classList.add('hidden');
-      referencesContainer.classList.add('hidden');
-      evenementsContainer.classList.add('hidden');
-      documentsContainer.classList.add('hidden');
-      aboutusContainer.classList.add('hidden');
-      contactContainer.classList.add('hidden');
-    });
+    // societe.addEventListener('click', (event) => {
+    //   societe.classList.add('active');
+    //   activites.classList.remove('active');
+    //   references.classList.remove('active');
+    //   evenements.classList.remove('active');
+    //   documents.classList.remove('active');
+    //   aboutus.classList.remove('active');
+    //   contact.classList.remove('active');
+    //   societeContainer.classList.remove('hidden');
+    //   activitesContainer.classList.add('hidden');
+    //   referencesContainer.classList.add('hidden');
+    //   evenementsContainer.classList.add('hidden');
+    //   documentsContainer.classList.add('hidden');
+    //   aboutusContainer.classList.add('hidden');
+    //   contactContainer.classList.add('hidden');
+    // });
 
     activites.addEventListener('click', (event) => {
-      societe.classList.remove('active');
+      // societe.classList.remove('active');
       activites.classList.add('active');
       references.classList.remove('active');
       evenements.classList.remove('active');
@@ -48,10 +49,11 @@ const selectorMenu = () => {
       documentsContainer.classList.add('hidden');
       aboutusContainer.classList.add('hidden');
       contactContainer.classList.add('hidden');
+      document.querySelector('.navbar-toggler').click();
     });
 
     references.addEventListener('click', (event) => {
-      societe.classList.remove('active');
+      // societe.classList.remove('active');
       activites.classList.remove('active');
       references.classList.add('active');
       evenements.classList.remove('active');
@@ -65,10 +67,11 @@ const selectorMenu = () => {
       documentsContainer.classList.add('hidden');
       aboutusContainer.classList.add('hidden');
       contactContainer.classList.add('hidden');
+      document.querySelector('.navbar-toggler').click();
     });
 
     evenements.addEventListener('click', (event) => {
-      societe.classList.remove('active');
+      // societe.classList.remove('active');
       activites.classList.remove('active');
       references.classList.remove('active');
       evenements.classList.add('active');
@@ -82,10 +85,11 @@ const selectorMenu = () => {
       documentsContainer.classList.add('hidden');
       aboutusContainer.classList.add('hidden');
       contactContainer.classList.add('hidden');
+      document.querySelector('.navbar-toggler').click();
     });
 
     documents.addEventListener('click', (event) => {
-      societe.classList.remove('active');
+      // societe.classList.remove('active');
       activites.classList.remove('active');
       references.classList.remove('active');
       evenements.classList.remove('active');
@@ -99,10 +103,11 @@ const selectorMenu = () => {
       documentsContainer.classList.remove('hidden');
       aboutusContainer.classList.add('hidden');
       contactContainer.classList.add('hidden');
+      document.querySelector('.navbar-toggler').click();
     });
 
     aboutus.addEventListener('click', (event) => {
-      societe.classList.remove('active');
+      // societe.classList.remove('active');
       activites.classList.remove('active');
       references.classList.remove('active');
       evenements.classList.remove('active');
@@ -116,10 +121,11 @@ const selectorMenu = () => {
       documentsContainer.classList.add('hidden');
       aboutusContainer.classList.remove('hidden');
       contactContainer.classList.add('hidden');
+      document.querySelector('.navbar-toggler').click();
     });
 
     contact.addEventListener('click', (event) => {
-      societe.classList.remove('active');
+      // societe.classList.remove('active');
       activites.classList.remove('active');
       references.classList.remove('active');
       evenements.classList.remove('active');
@@ -133,7 +139,9 @@ const selectorMenu = () => {
       documentsContainer.classList.add('hidden');
       aboutusContainer.classList.add('hidden');
       contactContainer.classList.remove('hidden');
+      document.querySelector('.navbar-toggler').click();
     });
+  }
 };
 
 export { selectorMenu };

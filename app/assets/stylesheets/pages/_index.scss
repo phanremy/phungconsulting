@@ -18,7 +18,7 @@ a:hover {
 
 .main-page {
   // width: 100vh;
-  display: flex;
+  // display: flex;
 }
 
 
@@ -95,11 +95,7 @@ a:hover {
 }
 
 @media(max-width: 767.98px) {
-    // Test navbar-top, clash with other parameters
-  // .main-page {
-    // width: 100vh;
-    // display: block;
-  // }
+
 
   .reference-categories {
     display:block;
@@ -116,7 +112,7 @@ a:hover {
 
   .section-container {
     margin-left: 10px;
-    margin-top: 130px;
+    // margin-top: 130px;
     max-width: 300px;
   }
 

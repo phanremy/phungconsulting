@@ -1,0 +1,168 @@
+// Specific CSS for your home-page
+.container-home {
+  h2 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+}
+
+.selector-tab {
+  border: 1px solid lightgrey;
+  // height: 150px;
+  width: 150px;
+  flex-wrap: wrap;
+  // border-radius: 50%;
+  display: flex;
+  justify-content : center;
+  align-items: center;
+  padding:8px;
+  margin: 8px 16px;
+
+  &.active {
+    background-color: lightgreen;
+  }
+}
+
+
+@media only screen and (min-width: 576px) {
+  .selector-tab {
+    height: 150px;
+    border-radius: 50%;
+  }
+}
+
+.master-banner {
+  padding: 300px 0;
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("https://source.unsplash.com/random/1000x500");
+  background-size: cover;
+  color: white;
+}
+
+.secondary-banner {
+  padding: 200px 0;
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("https://source.unsplash.com/random/1500x499");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.master-banner > .container {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.row {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
+.asset {
+  display: flex;
+  // min-width: 300px;
+
+  .asset-text{
+    text-align: left;
+    padding-left: 8px;
+    padding-top:16px;
+
+    h2 {
+      padding-bottom: 8px;
+    }
+  }
+
+  .asset-img {
+    min-width: 80px;
+    text-align: center;
+
+
+    i {
+      color: green;
+      font-size: 50px;
+    }
+  }
+}
+
+.social-link-icon {
+  font-size:24px;
+  color: white;
+  padding: 0 1rem;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.big-card {
+
+}
+
+.small-card {
+
+}
+
+.portolio-section {
+  &.active {
+    display:block;
+    opacity: 1;
+  }
+
+  &.hidden{
+    display:none;
+    opacity: 0;
+  }
+}
+
+// wagon horizontal-card
+
+.card-product {
+  overflow: hidden;
+  height: 120px;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+}
+
+.card-product img {
+  height: 100%;
+  width: 120px;
+  object-fit: cover;
+}
+
+.card-product h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-product p {
+  font-size: 12px;
+  line-height: 1.4;
+  opacity: .7;
+  margin-bottom: 0;
+  margin-top: 8px;
+}
+
+.card-product .card-product-infos {
+  padding: 16px;
+}
+
+.footer {
+  display: flex;
+  padding: 16px;
+  justify-content: space-around;
+  background-color: #253347;
+  color: lightgrey;
+}
+
+html {
+  scroll-behavior: smooth;
+}

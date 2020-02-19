@@ -1,0 +1,114 @@
+<div class="master-banner" id="master-banner">
+  <div class="container text-center">
+      <p data-aos="fade-down-right" data-aos-duration="3000">Phung Consulting</p>
+      <p data-aos="fade-down-right" data-aos-duration="3000" data-aos-delay="3000">Ingénierie en génie climatique, électrique, énergétique et environnemental</p>
+      <br><%= link_to "Contact", "#social-footer", class:"btn btn-success px-5"  %>
+  </div>
+</div>
+
+<div class="py-5" id="text">
+  <div class="container">
+    <h2>Climatic, electric, energetic and environmental engineer</h2>
+    <div class="row">
+      <div class="col-12 col-lg-6 py-lg-2 bg-white">
+        <p>In the field of Thermal Environment (Heating, Ventilation, Air-conditioning and Smoke clearing) and of Sanitary Facilities (Plumbing), I am able to propose all the missions including the control of design from the feasibility of a project until the delivery of a job.</p>
+        <p class="pt-4">According to the complexity of the project and the wishes of the customer, the missions can be declined as follows:</p>
+        <ul>
+         <li>Studies of programming defining the needs of the users of buildings;</li>
+         <li>Audits and thermal diagnoses of the existing buildings;</li>
+         <li>Recommendations in the technico-economic field and studies (investment, exploitation, profitability);</li>
+         <li>Outline project with pilot study of various possible solutions;</li>
+        </ul>
+      </div>
+      <div class="col-12 col-lg-6 py-lg-2 bg-white">
+        <ul>
+           <li>Estimate or detailed figuring of the labor costs;</li>
+           <li>Assistance with the architect for the deposit of a permit building or a declaration of work;</li>
+           <li>Assistance with the deposit of a declaration of installation classified for environmental protection (boiler room, refrigerating production…);</li>
+          <li>Summary preliminary draft for definition of the services;</li>
+          <li>Detailed preliminary draft for the dimensioning of the installations;</li>
+          <li>File-project and Tender documents of the companies;</li>
+          <li>Assistance in the making of the markets with comparative analysis of the estimates of companies;</li>
+          <li>Control of the execution documents of the companies;</li>
+          <li>Control of the works in course of execution;</li>
+          <li>Works preliminary to the reception;</li>
+          <li>Finalization of the works of the companies;</li>
+          <li>H.Q.E. steps</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="secondary-banner" id="secondary-banner">
+  <div class="container container-home text-center">
+    <h2> Want to work with us?</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit architecto rerum vitae laboriosam illo soluta, amet maiores fugiat qui animi natus corporis adipisci, impedit non labore quas! Odio, hic, sint!</p>
+    <%= link_to "Click here", "", class:"btn btn-success"  %>
+  </div>
+</div>
+
+<div id="portfolio-links">
+  <%= render 'shared/portfolio-links' %>
+</div>
+
+<div id="tabs">
+  <%= render 'shared/tabs' %>
+</div>
+
+<div id="assets">
+  <%= render 'shared/assets' %>
+</div>
+
+<div class="py-5" id="cards">
+  <div class="container container-home text-center">
+    <h2> Les Références de Phung Consulting</h2>
+    <div class="cards">
+      <% @url_image_path = "https://source.unsplash.com/random/200x200" %>
+      <%= render "shared/vertical-card" %>
+      <% @url_image_path = "https://source.unsplash.com/random/200x199" %>
+      <%= render "shared/vertical-card" %>
+      <% @url_image_path = "https://source.unsplash.com/random/199x199" %>
+      <%= render "shared/vertical-card" %>
+    </div>
+  </div>
+
+</div>
+
+<div style="background-color: white" class="py-5" id="collaborate-section">
+  <div class="container container-home">
+    <h2 class="text-center"> Une question? Envie de collaborer?</h2>
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-6">
+        <p>Contactez Lydie PHUNG, gérante</p>
+        <p style="margin:0px"><small>Code APE/NAF : 7112 B - Ingénierie, études techniques</small></p>
+        <p style="margin:0px"><small>N° SIREN : 492 583 539 RCS Créteil</small></p>
+        <p style="margin:0px"><small>EURL au capital de 30 000€</small></p>
+        <p style="margin:0px"><small>TVA : FR 55 49 25 83 53 – TVA sur encaissement</small></p>
+        <p style="margin:0px"><small>EUROMAF-ID : 7383027/E/10 - N° POLICE : 7003094/S</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div style="" class="py-5">
+  <div class="container container-home">
+    <h2 class="text-center"> Venez nous rencontrer</h2>
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-6">
+        <p>Bureaux :</p>
+        <p>110, rue de Fontenay 94300 Vincennes</p>
+        <p>Tél : <%= link_to "+33 (0)1 48 59 12 96", "tel:+33 (0)1 48 59 12 96" %></p>
+        <p>email : <%= link_to "contact@phungconsulting.fr", "mailto:contact@phungconsulting.fr"  %></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="social-footer">
+  <%= render 'shared/social-links' %>
+</div>
+
+<div id="master-footer">
+  <%= render 'shared/master-footer' %>
+</div>

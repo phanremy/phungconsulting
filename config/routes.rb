@@ -13,4 +13,7 @@ Rails.application.routes.draw do
 
   # test with top navbar
   get 'home_test', to: 'pages#home_test'
+
+  # test with top navbar
+  get 'home_portfolio', to: 'pages#home_portfolio'
 end

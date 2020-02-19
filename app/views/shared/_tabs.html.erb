@@ -1,0 +1,53 @@
+<div class="container container-home py-5" style="">
+  <h2 class="text-center">Nos Secteurs d'activités</h2>
+  <ul class="d-flex flex-wrap align-items-center justify-content-center mt-5" style="list-style: none">
+    <li class="active selector-tab" id="achievements-selector">Audits</li>
+    <li class="selector-tab" id="current-works-selector">Logements</li>
+    <li class="selector-tab" id="collaborations-selector">Tertiaires</li>
+    <!-- <li class="btn btn-danger border m-2">Blog Posts</li> -->
+    <!-- <li class="btn btn-info border m-2">Hobbies</li> -->
+  </ul>
+  <div class="active portolio-section" id="achievements">
+    <div class="cards">
+      <% @card_title = "Audit 1" %>
+      <% @url_image_path = "audits.jpg" %>
+      <%= render 'shared/horizontal-card' %>
+      <% @card_title = "Audit 2" %>
+      <% @url_image_path = "audits.jpg" %>
+      <%= render 'shared/horizontal-card' %>
+      <% @card_title = "Audit 3" %>
+      <% @url_image_path = "audits.jpg" %>
+      <%= render 'shared/horizontal-card' %>
+    </div>
+  </div>
+  <div class="hidden portolio-section" id="current-works">
+    <div class="row justify-content-center py-2">
+      <div class="col-10 col-lg-6 d-flex align-items-center justify-content-center">
+        <%= image_tag "logements.jpg", alt: "logements", class:"rounded" %>
+      </div>
+      <div class="col-10 col-lg-6 pt-4 pt-lg-3 text-left">
+        <h4>Ongoing Projects</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam et, impedit, placeat voluptate dolores labore quibusdam dolore mollitia amet quisquam reiciendis perferendis dolorem nostrum nobis eveniet nisi, earum illo ea.</p>
+      </div>
+    </div>
+  </div>
+  <div class="hidden portfolio-section" id="collaborations">
+    <div class="row justify-content-center py-2">
+      <div class="col-10 col-lg-4 pt-4 pt-lg-5 text-left">
+        <h4>Collaboration 1</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam et, impedit, placeat voluptate dolores labore quibusdam dolore mollitia amet quisquam reiciendis perferendis dolorem nostrum nobis eveniet nisi, earum illo ea.</p>
+      </div>
+      <div class="col-10 col-lg-4 d-flex align-items-center justify-content-center">
+        <div style="background-image: url(<%= image_path "tertiaires.jpg", alt: "logements", class:"rounded" %>); background-size: cover; background-position:center; width: 250px; height: 150px;">
+
+        </div>
+      </div>
+      <div class="col-10 col-lg-4 pt-4 pt-lg-5 text-left">
+        <h4>Collaboration 2</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam et, impedit, placeat voluptate dolores labore quibusdam dolore mollitia amet quisquam reiciendis perferendis dolorem nostrum nobis eveniet nisi, earum illo ea.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
